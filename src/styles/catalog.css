@@ -1,0 +1,120 @@
+.catalog-header {
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+  color: var(--white);
+  padding: 64px 0;
+  text-align: center;
+}
+
+.catalog-header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.catalog-header p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.catalog-container {
+  padding: 48px 0;
+}
+
+.catalog-container .container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+}
+
+.catalog-sidebar {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 88px;
+}
+
+.filter-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+
+.filter-group {
+  margin-bottom: 24px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.filter-input,
+.filter-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  color: var(--dark);
+  background-color: var(--white);
+  transition: var(--transition);
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.clear-filters-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--light-gray);
+  color: var(--dark);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.clear-filters-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.catalog-main {
+  min-height: 500px;
+}
+
+.results-header {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+@media (max-width: 968px) {
+  .catalog-container .container {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-sidebar {
+    position: static;
+  }
+
+  .catalog-header h1 {
+    font-size: 32px;
+  }
+
+  .catalog-header p {
+    font-size: 16px;
+  }
+}

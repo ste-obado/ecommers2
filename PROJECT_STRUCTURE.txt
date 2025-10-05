@@ -1,0 +1,61 @@
+PROJECT FILE STRUCTURE
+======================
+
+affiliate-website/
+├── index.html                    # Homepage with hero and featured products
+├── catalog.html                  # Product catalog with search/filter
+├── product.html                  # Individual product detail page
+├── contact.html                  # Contact form page
+├── admin-login.html              # Admin authentication page
+├── admin-dashboard.html          # Admin dashboard with analytics
+├── admin-products.html           # Product management (CRUD)
+├── admin-clients.html            # Client inquiry management
+│
+├── src/
+│   ├── config/
+│   │   └── supabase.js          # Supabase client & helper functions
+│   │
+│   ├── styles/
+│   │   ├── global.css           # Global styles & variables
+│   │   ├── home.css             # Homepage specific styles
+│   │   ├── catalog.css          # Catalog page styles
+│   │   ├── product.css          # Product detail page styles
+│   │   ├── contact.css          # Contact page styles
+│   │   ├── admin-login.css      # Admin login styles
+│   │   └── admin.css            # Admin panel styles
+│   │
+│   └── scripts/
+│       ├── home.js              # Homepage functionality
+│       ├── catalog.js           # Catalog page functionality
+│       ├── product.js           # Product detail functionality
+│       ├── contact.js           # Contact form functionality
+│       ├── admin-login.js       # Admin authentication
+│       ├── admin-dashboard.js   # Dashboard functionality
+│       ├── admin-products.js    # Product management
+│       └── admin-clients.js     # Client inquiry management
+│
+├── .env                         # Supabase credentials (DO NOT SHARE)
+├── package.json                 # Project dependencies
+├── SETUP.txt                    # Complete setup guide
+└── PROJECT_STRUCTURE.txt        # This file
+
+DATABASE TABLES (Supabase):
+============================
+- products           # All product data
+- clients            # Client inquiries
+- analytics          # Usage tracking
+- admin_users        # Admin user accounts
+
+KEY FEATURES:
+=============
+✓ Product showcase with images & videos
+✓ Affiliate links (Digistore24 compatible)
+✓ Search & filter products
+✓ Contact form with tracking
+✓ Admin dashboard with analytics
+✓ Product management (add/edit/delete)
+✓ Client inquiry management
+✓ Mobile responsive design
+✓ Smooth animations & transitions
+✓ Row Level Security enabled
+✓ View tracking per product

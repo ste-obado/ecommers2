@@ -1,0 +1,177 @@
+AFFILIATE PRODUCT SHOWCASE WEBSITE - SETUP GUIDE
+================================================
+
+CONGRATULATIONS! Your website is ready to use.
+
+WHAT YOU HAVE:
+--------------
+✓ Public-facing website with:
+  - Beautiful homepage with hero section
+  - Product catalog with search and filtering
+  - Individual product pages with videos and images
+  - Contact form for client inquiries
+  - Responsive design for all devices
+  - Smooth animations and transitions
+
+✓ Complete Admin Panel with:
+  - Secure authentication
+  - Dashboard with analytics
+  - Product management (create, edit, delete)
+  - Image and video upload support
+  - Client inquiry monitoring
+  - Featured products management
+  - Status tracking
+
+✓ Supabase Backend:
+  - PostgreSQL database
+  - Row Level Security enabled
+  - Real-time analytics tracking
+  - Secure authentication
+
+FIRST TIME SETUP:
+-----------------
+1. CREATE AN ADMIN ACCOUNT:
+   Since this is your first time, you need to create an admin user in Supabase.
+
+   a) Go to: https://vobewrtddlxthlrsauxx.supabase.co
+   b) Sign in to Supabase dashboard
+   c) Go to Authentication > Users
+   d) Click "Add user" > Create with email
+   e) Enter email and password (remember these!)
+   f) After creating the user, note the user ID
+
+   g) Go to SQL Editor and run this query (replace with your actual user ID and details):
+
+   INSERT INTO admin_users (id, email, full_name, role)
+   VALUES
+   ('YOUR_USER_ID_HERE', 'admin@proshop.com', 'Admin User', 'super_admin');
+
+   Example:
+   INSERT INTO admin_users (id, email, full_name, role)
+   VALUES
+   ('a1b2c3d4-e5f6-7890-abcd-ef1234567890', 'admin@example.com', 'John Doe', 'super_admin');
+
+2. LOGIN TO ADMIN PANEL:
+   - Visit: http://localhost:5173/admin-login.html
+   - Use the email and password you created
+   - You'll see the admin dashboard
+
+3. ADD YOUR FIRST PRODUCTS:
+   - Click "Products" in the sidebar
+   - Click "+ Add Product"
+   - Fill in the product details:
+     * Title, category, descriptions
+     * Price
+     * Affiliate link (from Digistore24 or your platform)
+     * Image URL (use Pexels.com for free stock photos)
+     * Optional: Video URL (direct link to .mp4 file)
+   - Set as "Featured" to show on homepage
+   - Save!
+
+USING THE WEBSITE:
+------------------
+Public Pages:
+- Homepage: /
+- Catalog: /catalog.html
+- Product Detail: /product.html?id=PRODUCT_ID
+- Contact: /contact.html
+
+Admin Pages:
+- Login: /admin-login.html
+- Dashboard: /admin-dashboard.html
+- Products: /admin-products.html
+- Clients: /admin-clients.html
+
+IMPORTANT FEATURES:
+-------------------
+✓ Product Management:
+  - Upload product images (paste URL from image hosting)
+  - Add product demo videos (paste direct .mp4 URL)
+  - Organize by categories
+  - Mark products as featured for homepage
+  - Set status: Active, Draft, or Archived
+  - Track views per product
+
+✓ Client Tracking:
+  - All contact form submissions are saved
+  - Track inquiry status: New, Contacted, Resolved
+  - View client details and messages
+  - Filter by status
+
+✓ Analytics:
+  - Total products count
+  - Total inquiries
+  - Product views tracking
+  - Affiliate link clicks tracking
+
+CUSTOMIZATION:
+--------------
+To change site name/branding:
+- Edit "ProShop" in all HTML files to your brand name
+- Update colors in /src/styles/global.css (--primary-color, etc.)
+
+To add more categories:
+- Just type new category names when adding products
+- They automatically appear in the catalog filters
+
+WHERE TO GET IMAGES:
+--------------------
+Free stock photo websites:
+- Pexels.com
+- Unsplash.com
+- Pixabay.com
+
+Copy the direct image URL and paste it in the "Image URL" field.
+
+WHERE TO HOST VIDEOS:
+---------------------
+For product demo videos:
+1. Upload to Vimeo, YouTube, or direct file hosting
+2. For MP4 files, use services like:
+   - Cloudinary
+   - AWS S3
+   - Any hosting that gives direct .mp4 URL
+
+TIPS FOR SUCCESS:
+-----------------
+1. Use high-quality product images (at least 800x800px)
+2. Write compelling descriptions
+3. Keep short descriptions under 150 characters
+4. Use clear, accurate pricing
+5. Test your affiliate links before publishing
+6. Mark your best products as "Featured"
+7. Respond to client inquiries promptly
+8. Monitor analytics to see what's popular
+
+TROUBLESHOOTING:
+----------------
+Q: Can't login to admin?
+A: Make sure you created the admin user in Supabase and added them to admin_users table
+
+Q: Products not showing?
+A: Check product status is "Active" not "Draft"
+
+Q: Images not loading?
+A: Verify the image URL is a direct link (ends in .jpg, .png, etc.)
+
+Q: Videos not playing?
+A: Use direct .mp4 file URLs, not YouTube/Vimeo embed links
+
+NEED MORE FEATURES?
+-------------------
+The website is built with:
+- HTML/CSS/JavaScript
+- Supabase (Database + Auth)
+- Vite (Build tool)
+
+You can customize anything! All source code is in:
+- /src/styles/ - CSS files
+- /src/scripts/ - JavaScript files
+- /*.html - HTML pages
+
+SUPPORT:
+--------
+Database: https://vobewrtddlxthlrsauxx.supabase.co
+Documentation: https://supabase.com/docs
+
+Enjoy your new affiliate product showcase website!

@@ -1,0 +1,160 @@
+🚀 QUICK START GUIDE
+====================
+
+Your affiliate product showcase website is READY!
+
+📋 STEP-BY-STEP SETUP (5 MINUTES):
+===================================
+
+STEP 1: CREATE ADMIN ACCOUNT
+-----------------------------
+Go to Supabase Dashboard:
+https://vobewrtddlxthlrsauxx.supabase.co
+
+1. Click "Authentication" → "Users"
+2. Click "Add user" → "Create new user"
+3. Enter:
+   - Email: your@email.com
+   - Password: (choose a strong password)
+4. Click "Create user"
+5. COPY THE USER ID (you'll need it next)
+
+STEP 2: ADD ADMIN PRIVILEGES
+-----------------------------
+1. In Supabase, click "SQL Editor"
+2. Paste this query (replace YOUR_USER_ID and your@email.com):
+
+INSERT INTO admin_users (id, email, full_name, role)
+VALUES
+('YOUR_USER_ID', 'your@email.com', 'Your Name', 'super_admin');
+
+3. Click "Run"
+4. Done! You now have admin access
+
+STEP 3: LOGIN & ADD PRODUCTS
+-----------------------------
+1. Visit: http://localhost:5173/admin-login.html
+2. Login with your email and password
+3. Click "Products" in sidebar
+4. Click "+ Add Product"
+5. Fill in details and save
+
+📱 WEBSITE PAGES:
+=================
+Public Site:
+  Homepage:    http://localhost:5173/
+  Products:    http://localhost:5173/catalog.html
+  Contact:     http://localhost:5173/contact.html
+
+Admin Panel:
+  Login:       http://localhost:5173/admin-login.html
+  Dashboard:   http://localhost:5173/admin-dashboard.html
+  Products:    http://localhost:5173/admin-products.html
+  Clients:     http://localhost:5173/admin-clients.html
+
+🎨 WHAT YOU GET:
+================
+✅ Beautiful homepage with hero section
+✅ Product catalog with search & filters
+✅ Product pages with images & videos
+✅ Contact form (saves to database)
+✅ Full admin panel with dashboard
+✅ Analytics tracking (views, clicks)
+✅ Mobile responsive design
+✅ Smooth animations
+
+🔧 HOW TO ADD PRODUCTS:
+=======================
+1. Login to admin panel
+2. Products → Add Product
+3. Enter:
+   - Title & category
+   - Descriptions (short & full)
+   - Price
+   - Affiliate link (your Digistore link)
+   - Image URL (from Pexels.com or any image host)
+   - Video URL (optional .mp4 link)
+4. Set Featured = Yes (shows on homepage)
+5. Status = Active
+6. Save!
+
+📸 WHERE TO GET IMAGES:
+=======================
+Free stock photos:
+- https://pexels.com
+- https://unsplash.com
+- https://pixabay.com
+
+Right-click image → "Copy image address" → Paste in "Image URL"
+
+🎬 VIDEO HOSTING:
+=================
+For product demo videos:
+- Upload MP4 to Cloudinary, Vimeo, or AWS S3
+- Get direct .mp4 URL
+- Paste in "Video URL" field
+
+💡 PRO TIPS:
+============
+✓ Use high-quality images (min 800x800px)
+✓ Write compelling descriptions
+✓ Test affiliate links before publishing
+✓ Mark best products as "Featured"
+✓ Check "Draft" products before activating
+✓ Monitor dashboard analytics regularly
+✓ Respond to inquiries quickly
+
+🐛 TROUBLESHOOTING:
+===================
+Q: Can't login?
+A: Make sure you added user to admin_users table
+
+Q: Products not showing?
+A: Check status is "Active" not "Draft"
+
+Q: Images broken?
+A: Verify URL is direct link (ends in .jpg/.png)
+
+Q: Need to change brand name?
+A: Edit "ProShop" in HTML files + colors in global.css
+
+📊 ADMIN FEATURES:
+==================
+Dashboard shows:
+- Total products
+- Client inquiries
+- Product views
+- Affiliate clicks
+
+Products page:
+- Add/Edit/Delete products
+- Upload images & videos
+- Set featured products
+- Change status
+
+Clients page:
+- View all inquiries
+- Mark contacted/resolved
+- Filter by status
+
+🎯 READY TO LAUNCH:
+===================
+1. ✅ Create admin account (steps above)
+2. ✅ Add 3-5 products
+3. ✅ Mark 2-3 as featured
+4. ✅ Test contact form
+5. ✅ Check all pages work
+6. 🚀 You're ready to go live!
+
+📁 FILES INCLUDED:
+==================
+- 8 HTML pages (public + admin)
+- 7 CSS stylesheets
+- 8 JavaScript files
+- Supabase database (4 tables)
+- Complete authentication system
+- Mobile responsive design
+
+Need help? Check SETUP.txt for detailed guide.
+
+Happy selling! 🎉

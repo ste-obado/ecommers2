@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog - ProShop</title>
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/catalog.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">ProShop</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/catalog.html">Products</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/admin-login.html" class="admin-link">Admin</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="catalog-header">
+    <div class="container">
+      <h1>Product Catalog</h1>
+      <p>Explore our complete collection of premium products</p>
+    </div>
+  </div>
+
+  <div class="catalog-container">
+    <div class="container">
+      <div class="catalog-sidebar">
+        <div class="filter-section">
+          <h3>Filters</h3>
+
+          <div class="filter-group">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Search products..." class="filter-input">
+          </div>
+
+          <div class="filter-group">
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="">All Categories</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sortFilter">Sort By</label>
+            <select id="sortFilter" class="filter-select">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="popular">Most Popular</option>
+            </select>
+          </div>
+
+          <button id="clearFilters" class="clear-filters-btn">Clear Filters</button>
+        </div>
+      </div>
+
+      <div class="catalog-main">
+        <div class="results-header">
+          <span id="resultsCount">Loading products...</span>
+        </div>
+
+        <div id="productsGrid" class="products-grid">
+          <div class="loading">Loading products...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ProShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - ProShop</title>
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/admin-login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <a href="/" class="login-logo">ProShop Admin</a>
+      <h1>Welcome Back</h1>
+      <p>Sign in to access the admin panel</p>
+
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required class="form-input" placeholder="admin@proshop.com">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required class="form-input" placeholder="••••••••">
+        </div>
+
+        <button type="submit" class="cta-button" id="loginBtn">
+          Sign In
+        </button>
+
+        <div id="loginMessage"></div>
+      </form>
+
+      <div class="login-footer">
+        <a href="/">← Back to Website</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/scripts/admin-login.js"></script>
+</body>
+</html>
